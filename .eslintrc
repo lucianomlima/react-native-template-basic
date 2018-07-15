@@ -1,0 +1,64 @@
+{
+  "env": {
+    "es6": true,
+    "react-native/react-native": true
+  },
+  "extends": ["airbnb", "plugin:react/recommended"],
+  "globals": {
+    "__DEV__": false
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "react-native"
+  ],
+  "rules": {
+    "arrow-parens": ["error", "as-needed"],
+    "class-methods-use-this": "off",
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "ignore"
+    }],
+    "indent": ["error", 2, {
+      "SwitchCase": 1
+    }],
+    "global-require": "off",
+    "no-console": ["error", {
+      "allow": ["warn", "error"]
+    }],
+    "no-underscore-dangle": ["error", {
+        "allowAfterThis": true
+    }],
+    "no-use-before-define": ["error", {
+      "variables": false
+    }],
+    "object-curly-newline": "off",
+    "operator-linebreak": "off",
+    "radix": "off",
+
+    "import/extensions": ["error", {
+      "js": "never",
+      "graphql": "always",
+      "png": "always"
+    }],
+    "import/no-named-as-default": "off",
+    "import/no-unresolved": ["error", {
+      "ignore": ["^[~]"]
+    }],
+
+    "react/jsx-filename-extension": ["error", {
+      "extensions": [".js", ".jsx"]
+    }],
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-indent-props": ["error", 2],
+    "react/jsx-one-expression-per-line": "off",
+    "react/prefer-stateless-function": ["warn", {
+      "ignorePureComponents": true
+    }],
+
+    "react-native/no-inline-styles": "error"
+  }
+}
