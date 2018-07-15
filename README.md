@@ -47,3 +47,7 @@ To inject custom scripts and remove unnecessary files.
 - [ ] Add Enzyme
 - [ ] Add Lint Staged
 - [ ] Add Husky
+
+### License
+
+MIT
