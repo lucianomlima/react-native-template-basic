@@ -1,20 +1,20 @@
 {
-  "name": "react-native-template-basic",
-  "version": "0.0.1",
-  "author": "Luciano Lima <beavess+npm@gmail.com>",
-  "description": "Template to create a new React Native project with ESLint",
-  "homepage": "https://github.com/lucianomlima/react-native-template-basic",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/lucianomlima/react-native-template-basic/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:lucianomlima/react-native-template-basic.git"
-  },
-  "keywords": [
-    "react-native",
-    "template",
-    "eslint"
-  ]
+    "name": "react-native-template-basic-app",
+    "version": "0.0.1",
+    "author": "Luciano Lima <beavess+npm@gmail.com>",
+    "description": "Template to create a new React Native project with ESLint",
+    "homepage": "https://github.com/lucianomlima/react-native-template-basic",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/lucianomlima/react-native-template-basic/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:lucianomlima/react-native-template-basic.git"
+    },
+    "keywords": [
+        "react-native",
+        "template",
+        "eslint"
+    ]
 }

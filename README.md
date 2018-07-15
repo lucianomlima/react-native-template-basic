@@ -1,4 +1,4 @@
-## React Native Basic Template
+## React Native Basic App Template
 
 A simple basic template to start a new React Native app with ESLint and custom scripts.
 
@@ -12,7 +12,7 @@ A simple basic template to start a new React Native app with ESLint and custom s
 Create a new project passing a template:
 
 ```
-react-native init [ProjectName] --template basic
+react-native init [ProjectName] --template basic-app
 ```
 
 Wait for download dependencies. At finish run:
