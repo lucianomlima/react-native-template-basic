@@ -1,6 +1,6 @@
 {
     "name": "react-native-template-basic-app",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Luciano Lima <beavess+npm@gmail.com>",
     "description": "Template to create a new React Native project with ESLint",
     "homepage": "https://github.com/lucianomlima/react-native-template-basic",
