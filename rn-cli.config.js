@@ -7,19 +7,23 @@ const deleteFile = filename => {
   } catch (error) {}
 }
 
-console.log('🔁 Applying custom scripts...');
+const packagePath = path.join(__dirname, 'package.json');
+const packageJSON = JSON.parse(fs.readFileSync(packagePath, 'utf8'));
 
-// Inject scripts in package.json
+console.log('📝 Extending package.json...');
+
+// Inject config in package.json
 const scripts = require('./scripts.json');
-const packageJSON = JSON.parse(fs.readFileSync(path.join(__dirname, 'package.json'), 'utf8'));
-const updatedPackageJSON = Object.assign({}, packageJSON, scripts);
-fs.writeFileSync(path.join(__dirname, 'package.json'), JSON.stringify(updatedPackageJSON, null, 2));
+const extension = require('./package-extension.json');
+const updatedPackageJSON = Object.assign({}, packageJSON, scripts, extension);
+fs.writeFileSync(packagePath, JSON.stringify(updatedPackageJSON, null, 2));
 
 // Remove files
 deleteFile('LICENSE');
 deleteFile('README.md');
 deleteFile('devDependencies.json');
+deleteFile('package-extension.json');
 deleteFile('scripts.json');
 deleteFile('rn-cli.config.js');
 
-console.log(`🆗 Finished.`);
+console.log(`✅ Finished.`);
