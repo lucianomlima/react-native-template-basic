@@ -25,5 +25,6 @@ deleteFile('devDependencies.json');
 deleteFile('extension.json');
 deleteFile('scripts.json');
 deleteFile('rn-cli.config.js');
+deleteFile('App.js');
 
 console.log(`✅ Finished.`);
