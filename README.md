@@ -38,7 +38,7 @@ To inject custom scripts and remove unnecessary files.
 - [x] `start` - Start Metro Bundler
 - [x] `start:clean` - Start Metro Bundler without cache
 - [x] `test` - Run jest
-- [x] `test:watch` - Run jest in watch node_modules
+- [x] `test:watch` - Run jest in watch mode
 
 ### Roadmap
 
