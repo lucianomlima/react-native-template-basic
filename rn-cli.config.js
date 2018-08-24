@@ -14,7 +14,7 @@ console.log('📝 Extending package.json...');
 
 // Inject config in package.json
 const scripts = require('./scripts.json');
-const extension = require('./package-extension.json');
+const extension = require('./extension.json');
 const updatedPackageJSON = Object.assign({}, packageJSON, scripts, extension);
 fs.writeFileSync(packagePath, JSON.stringify(updatedPackageJSON, null, 2));
 
@@ -22,7 +22,7 @@ fs.writeFileSync(packagePath, JSON.stringify(updatedPackageJSON, null, 2));
 deleteFile('LICENSE');
 deleteFile('README.md');
 deleteFile('devDependencies.json');
-deleteFile('package-extension.json');
+deleteFile('extension.json');
 deleteFile('scripts.json');
 deleteFile('rn-cli.config.js');
 
