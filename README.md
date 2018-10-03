@@ -1,6 +1,7 @@
 ## React Native Basic App Template
 
 A simple basic template to start a new React Native app with ESLint and custom scripts.
+Now supports React Native v0.57.x
 
 ### Requirements
 
