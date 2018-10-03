@@ -20,22 +20,21 @@ console.log(EMPTY_LINE);
 
 if (versionNumber >= 570) {
   console.log('🛠  Fix React-Native@0.57.x installation...');
-
-  console.log(EMPTY_LINE);
+  console.log('⚙️  Cleaning React Native cache...', );
   execSync('rm -Rf .rncache', {
     cwd: os.homedir()
   });
-  console.log(' ⚛︎ React Native cache cleared!', );
 
+  console.log('⚙️  Downloading third-party...', );
   execSync('sh ./scripts/ios-install-third-party.sh', {
     cwd: 'node_modules/react-native',
     stdio: 'ignore'
   });
+  console.log('⚙️  Setup Glog...', );
   execSync('./configure', {
-    cwd: 'node_modules/react-native/third-party/glog*',
+    cwd: 'node_modules/react-native/third-party/glog-0.3.5',
     stdio: 'ignore'
   });
-  console.log('⚙️  Installed third-party!', );
 }
 
 console.log(EMPTY_LINE);
