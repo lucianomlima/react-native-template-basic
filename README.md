@@ -27,6 +27,7 @@ To inject custom scripts and remove unnecessary files.
 ### Includes
 
 - [x] ESlint (extends Airnbn)
+- [x] Husky
 - [x] Lint Staged
 
 ### Custom Scripts
@@ -36,7 +37,6 @@ To inject custom scripts and remove unnecessary files.
 - [x] `android:shake` - Show DEV menu
 - [x] `ios:install` - Run in Release mode
 - [x] `project:clean` - Clean project
-- [x] `precommit` - Run tasks before commit
 - [x] `lint` - Run lint
 - [x] `start` - Start Metro Bundler
 - [x] `start:clean` - Start Metro Bundler without cache
@@ -47,7 +47,6 @@ To inject custom scripts and remove unnecessary files.
 
 - [ ] Add Flow
 - [ ] Add Enzyme
-- [ ] Add Husky
 
 ### Contributing
 
