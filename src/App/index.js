@@ -1,3 +1,5 @@
+//@flow
+
 /**
  * React Native Basic App
  * https://github.com/facebook/react-native
@@ -23,6 +25,7 @@ export default class App extends Component<Props> {
         <View style={styles.featuresList}>
           <Text style={styles.feature}>{'\u2705 ESLint'}</Text>
           <Text style={styles.feature}>{'\u2705 Custom Scripts'}</Text>
+          <Text style={styles.feature}>{'\u2705 Flow'}</Text>
         </View>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>

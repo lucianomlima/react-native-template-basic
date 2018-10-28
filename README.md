@@ -28,6 +28,7 @@ To inject custom scripts and remove unnecessary files.
 
 - [x] ESlint (extends Airnbn)
 - [x] Lint Staged
+- [x] Flow
 
 ### Custom Scripts
 
@@ -45,7 +46,6 @@ To inject custom scripts and remove unnecessary files.
 
 ### Roadmap
 
-- [ ] Add Flow
 - [ ] Add Enzyme
 - [ ] Add Husky
 
