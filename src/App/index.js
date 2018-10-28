@@ -1,3 +1,5 @@
+//@flow
+
 /**
  * React Native Basic App
  * https://github.com/facebook/react-native
@@ -48,6 +50,7 @@ const App = (
       <Text style={styles.feature}>{'\u2705 ESLint'}</Text>
       <Text style={styles.feature}>{'\u2705 Prettier'}</Text>
       <Text style={styles.feature}>{'\u2705 Lint Staged'}</Text>
+      <Text style={styles.feature}>{'\u2705 Flow'}</Text>
       <Text style={styles.feature}>{'\u2705 Custom Scripts'}</Text>
     </View>
     <Text style={styles.instructions}>To get started, edit App.js</Text>
