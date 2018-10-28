@@ -6,6 +6,16 @@
     }
   },
   "lint-staged": {
-    "*.js": ["prettier --write", "yarn lint", "yarn test", "git add"]
+    "*.js": [
+      "prettier --write",
+      "yarn lint",
+      "yarn test",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "es5"
   }
 }
