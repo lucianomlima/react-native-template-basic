@@ -5,7 +5,6 @@
     "android:shake": "$ANDROID_HOME/platform-tools/adb shell input keyevent 82",
     "ios:install": "react-native run-ios --configuration Release",
     "project:clean": "rm -Rf $TMPDIR/react-* node_modules && watchman watch-del-all && yarn cache clean && cd android && ./gradlew clean && cd .. && yarn",
-    "precommit": "lint-staged",
     "prettier:check": "prettier -l index.js src/**/*.js",
     "prettier:all": "prettier --insert-pragma --write index.js src/**/*.js",
     "lint": "eslint --ext .js src/** ",

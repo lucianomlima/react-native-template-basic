@@ -27,6 +27,7 @@ To inject custom scripts and remove unnecessary files.
 ### Includes
 
 - [x] ESlint (extends Airbnb) v4.19.1
+- [x] Husky v1.1.2
 - [x] Lint Staged v7.3.0
 - [x] Prettier v1.14.3
 - [x] Flow v0.84.0
@@ -38,7 +39,6 @@ To inject custom scripts and remove unnecessary files.
 - [x] `android:shake` - Show DEV menu
 - [x] `ios:install` - Run in Release mode
 - [x] `project:clean` - Clean project
-- [x] `precommit` - Run tasks before commit
 - [x] `prettier:check` - Check for unformatted files
 - [x] `prettier:all` - Format files
 - [x] `lint` - Run lint
@@ -50,7 +50,6 @@ To inject custom scripts and remove unnecessary files.
 ### Roadmap
 
 - [ ] Add Enzyme
-- [ ] Add Husky
 
 ### Contributing
 
