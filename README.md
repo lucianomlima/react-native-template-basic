@@ -29,6 +29,7 @@ To inject custom scripts and remove unnecessary files.
 - [x] ESlint (extends Airbnb) v4.19.1
 - [x] Lint Staged v7.3.0
 - [x] Prettier v1.14.3
+- [x] Flow v0.84.0
 
 ### Custom Scripts
 
@@ -48,7 +49,6 @@ To inject custom scripts and remove unnecessary files.
 
 ### Roadmap
 
-- [ ] Add Flow
 - [ ] Add Enzyme
 - [ ] Add Husky
 
