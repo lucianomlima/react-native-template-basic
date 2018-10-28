@@ -27,6 +27,7 @@ To inject custom scripts and remove unnecessary files.
 ### Includes
 
 - [x] ESlint (extends Airnbn)
+- [x] Lint Staged
 
 ### Custom Scripts
 
@@ -35,6 +36,7 @@ To inject custom scripts and remove unnecessary files.
 - [x] `android:shake` - Show DEV menu
 - [x] `ios:install` - Run in Release mode
 - [x] `project:clean` - Clean project
+- [x] `precommit` - Run tasks before commit
 - [x] `lint` - Run lint
 - [x] `start` - Start Metro Bundler
 - [x] `start:clean` - Start Metro Bundler without cache
@@ -45,8 +47,17 @@ To inject custom scripts and remove unnecessary files.
 
 - [ ] Add Flow
 - [ ] Add Enzyme
-- [ ] Add Lint Staged
 - [ ] Add Husky
+
+### Contributing
+
+Clone this repo with `git clone https://github.com/lucianomlima/react-native-template-basic react-native-template-basic-app` cause npm needs  project dir name to be equal project name in `package.json`.
+
+To execute the project with your changes, you can use the absolute path of cloned repo with `react-native-cli`:
+
+```
+react-native init [PROJECT_NAME] --template file:///path/to/repo
+```
 
 ### License
 
