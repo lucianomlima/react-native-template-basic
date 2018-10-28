@@ -26,8 +26,9 @@ To inject custom scripts and remove unnecessary files.
 
 ### Includes
 
-- [x] ESlint (extends Airnbn)
-- [x] Lint Staged
+- [x] ESlint (extends Airbnb) v4.19.1
+- [x] Lint Staged v7.3.0
+- [x] Prettier v1.14.3
 
 ### Custom Scripts
 
@@ -51,7 +52,7 @@ To inject custom scripts and remove unnecessary files.
 
 ### Contributing
 
-Clone this repo with `git clone https://github.com/lucianomlima/react-native-template-basic react-native-template-basic-app` cause npm needs  project dir name to be equal project name in `package.json`.
+Clone this repo with `git clone https://github.com/lucianomlima/react-native-template-basic react-native-template-basic-app` cause npm needs  project dir name to be equal to project name in `package.json`.
 
 To execute the project with your changes, you can use the absolute path of cloned repo with `react-native-cli`:
 
