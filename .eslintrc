@@ -11,7 +11,8 @@
   "parser": "babel-eslint",
   "plugins": [
     "react",
-    "react-native"
+    "react-native",
+    "prettier"
   ],
   "rules": {
     "arrow-parens": ["error", "as-needed"],
@@ -60,6 +61,8 @@
       "ignorePureComponents": true
     }],
 
-    "react-native/no-inline-styles": "error"
+    "react-native/no-inline-styles": "error",
+
+    "prettier/prettier": "error"
   }
 }
