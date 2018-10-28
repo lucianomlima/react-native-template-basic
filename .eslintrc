@@ -12,7 +12,8 @@
   "plugins": [
     "react",
     "react-native",
-    "prettier"
+    "prettier",
+    "prettier/react"
   ],
   "rules": {
     "arrow-parens": ["error", "as-needed"],
