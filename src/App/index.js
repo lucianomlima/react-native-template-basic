@@ -1,10 +1,6 @@
-//@flow
-
 /**
- * React Native Basic App
- * https://github.com/facebook/react-native
- *
  * @format
+ * @flow
  */
 
 import React from 'react';
@@ -42,7 +38,7 @@ const instructions = Platform.select({
   android: 'Double tap R on your keyboard to reload,\nShake or press menu button for dev menu',
 });
 
-const App = (
+const App = () => (
   <View style={styles.container}>
     <Text style={styles.welcome}>Welcome to React Native!</Text>
     <Text style={styles.instructions}>Your App is ready and you already have:</Text>
