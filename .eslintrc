@@ -9,12 +9,7 @@
     "__DEV__": false
   },
   "parser": "babel-eslint",
-  "plugins": [
-    "react",
-    "react-native",
-    "prettier",
-    "prettier/react"
-  ],
+  "plugins": ["react", "react-native", "prettier"],
   "rules": {
     "arrow-parens": ["error", "as-needed"],
     "class-methods-use-this": "off",
