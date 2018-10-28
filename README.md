@@ -45,7 +45,6 @@ To inject custom scripts and remove unnecessary files.
 
 ### Roadmap
 
-- [ ] Add Prettier
 - [ ] Add Flow
 - [ ] Add Enzyme
 - [ ] Add Husky
