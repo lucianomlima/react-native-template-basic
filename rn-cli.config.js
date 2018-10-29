@@ -15,7 +15,9 @@ const deleteFile = filename => {
   } catch (error) {}
 }
 
+const packagePath = path.join(__dirname, 'package.json');
 const packageJSON = readFile('package.json');
+
 const versionString = packageJSON.dependencies['react-native'];
 const versionNumber = parseInt(versionString.replace(/\./g, ''));
 
