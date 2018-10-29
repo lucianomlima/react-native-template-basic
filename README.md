@@ -53,7 +53,7 @@ To inject custom scripts and remove unnecessary files.
 
 ### Contributing
 
-Clone this repo with `git clone https://github.com/lucianomlima/react-native-template-basic react-native-template-basic-app` cause npm needs  project dir name to be equal to project name in `package.json`.
+Clone this repo with `git clone https://github.com/lucianomlima/react-native-template-basic react-native-template-basic-app` cause npm needs project dir name to be equal to project name in `package.json`.
 
 To execute the project with your changes, you can use the absolute path of cloned repo with `react-native-cli`:
 
