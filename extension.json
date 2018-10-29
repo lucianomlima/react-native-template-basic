@@ -5,7 +5,6 @@
       "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
     }
   },
-  "husky": {},
   "lint-staged": {
     "*.js": [
       "prettier --write",

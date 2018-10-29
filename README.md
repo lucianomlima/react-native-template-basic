@@ -41,6 +41,7 @@ To inject custom scripts and remove unnecessary files.
 - [x] `project:clean` - Clean project
 - [x] `prettier:check` - Check for unformatted files
 - [x] `prettier:all` - Format files
+- [x] `flow` - Run Flow
 - [x] `lint` - Run lint
 - [x] `start` - Start Metro Bundler
 - [x] `start:clean` - Start Metro Bundler without cache
