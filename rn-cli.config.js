@@ -20,17 +20,17 @@ console.log(EMPTY_LINE);
 
 if (versionNumber >= 570) {
   console.log('🛠  Fix React-Native@0.57.x installation...');
-  console.log('⚙️  Cleaning React Native cache...', );
+  console.log(' -> Cleaning React Native cache...');
   execSync('rm -Rf .rncache', {
     cwd: os.homedir()
   });
 
-  console.log('⚙️  Downloading third-party...', );
+  console.log(' -> Downloading third-party...');
   execSync('sh ./scripts/ios-install-third-party.sh', {
     cwd: 'node_modules/react-native',
     stdio: 'ignore'
   });
-  console.log('⚙️  Setup Glog...', );
+  console.log(' -> Setup Glog...');
   execSync('./configure', {
     cwd: 'node_modules/react-native/third-party/glog-0.3.5',
     stdio: 'ignore'
@@ -47,6 +47,13 @@ const extension = require('./extension.json');
 const updatedPackageJSON = Object.assign({}, packageJSON, scripts, extension);
 fs.writeFileSync(packagePath, JSON.stringify(updatedPackageJSON, null, 2));
 
+console.log('⚙️  Resolve Enzyme dependencies...');
+
+const reactVersion = updatedPackageJSON.dependencies['react'];
+execSync(`yarn add --dev react-dom@${reactVersion}`, {
+  stdio: 'ignore'
+});
+
 // Remove files
 deleteFile('LICENSE');
 deleteFile('README.md');
@@ -56,4 +63,4 @@ deleteFile('scripts.json');
 deleteFile('rn-cli.config.js');
 deleteFile('App.js');
 
-console.log(`✅ Finished.`);
+console.log(`✅ Finished!`);

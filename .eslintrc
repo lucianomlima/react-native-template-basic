@@ -10,6 +10,15 @@
   },
   "parser": "babel-eslint",
   "plugins": ["react", "react-native", "prettier"],
+  "overrides": [
+    {
+      "files": ["*.spec.js"],
+      "rules": {
+        "react-native/no-inline-styles": "off",
+        "react-native/no-unused-styles": "off"
+      }
+    }
+  ],
   "rules": {
     "arrow-parens": ["error", "as-needed"],
     "class-methods-use-this": "off",
@@ -58,6 +67,7 @@
     }],
 
     "react-native/no-inline-styles": "error",
+    "react-native/no-unused-styles": "error",
 
     "prettier/prettier": "error"
   }

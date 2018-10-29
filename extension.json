@@ -1,6 +1,11 @@
 {
   "jest": {
     "preset": "react-native",
+    "timers": "fake",
+    "setupTestFrameworkScriptFile": "<rootDir>/jestSetup.js",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "transform": {
       "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
     }

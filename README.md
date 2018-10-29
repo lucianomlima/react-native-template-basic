@@ -43,6 +43,7 @@ To inject custom scripts and remove unnecessary files.
 - [x] Lint Staged v7.3.0
 - [x] Prettier v1.14.3
 - [x] Flow v0.84.0
+- [x] Enzyme v3.7.0
 
 ### Custom Scripts
 
@@ -59,10 +60,6 @@ To inject custom scripts and remove unnecessary files.
 - [x] `start:clean` - Start Metro Bundler without cache
 - [x] `test` - Run jest
 - [x] `test:watch` - Run jest in watch mode
-
-## Roadmap
-
-- [ ] Add Enzyme
 
 ## Contributing
 
