@@ -1,14 +1,14 @@
-## React Native Basic App Template
+# React Native Basic App Template
 
 A simple basic template to start a new React Native app with ESLint and custom scripts.
 Now supports React Native v0.57.x
 
-### Requirements
+## Requirements
 
 - react-native-cli
 - yarn
 
-### Usage
+## Usage
 
 Create a new project passing a template:
 
@@ -16,7 +16,19 @@ Create a new project passing a template:
 react-native init [ProjectName] --template basic-app
 ```
 
-Wait for download dependencies. At finish run:
+Wait for download dependencies.
+
+### Husky git hooks
+
+Git hooks is not installed by default, because when start a new React Native app, you don't have a git repository started.
+To fix this, first init git repo with `git init .` inside you App dir and after this run:
+
+```
+node node_modules/husky/lib/installer/bin install
+```
+
+### React Native < v0.57.0
+Finish install with:
 
 ```
 yarn start
@@ -24,7 +36,7 @@ yarn start
 
 To inject custom scripts and remove unnecessary files.
 
-### Includes
+## Includes
 
 - [x] ESlint (extends Airbnb) v4.19.1
 - [x] Husky v1.1.2
@@ -48,11 +60,11 @@ To inject custom scripts and remove unnecessary files.
 - [x] `test` - Run jest
 - [x] `test:watch` - Run jest in watch mode
 
-### Roadmap
+## Roadmap
 
 - [ ] Add Enzyme
 
-### Contributing
+## Contributing
 
 Clone this repo with `git clone https://github.com/lucianomlima/react-native-template-basic react-native-template-basic-app` cause npm needs project dir name to be equal to project name in `package.json`.
 
@@ -62,6 +74,6 @@ To execute the project with your changes, you can use the absolute path of clone
 react-native init [PROJECT_NAME] --template file:///path/to/repo
 ```
 
-### License
+## License
 
 MIT
