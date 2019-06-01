@@ -1,10 +1,10 @@
 # React Native Basic App Template
 
 A simple basic template to start a new React Native app with ESLint and custom scripts.
-Now supports React Native v0.57.x
 
 ## Requirements
 
+- node
 - react-native-cli
 - yarn
 
@@ -38,18 +38,16 @@ To inject custom scripts and remove unnecessary files.
 
 ## Includes
 
-- [x] ESlint (extends Airbnb) v4.19.1
-- [x] Husky v1.1.2
-- [x] Lint Staged v7.3.0
-- [x] Prettier v1.14.3
-- [x] Flow v0.84.0
-- [x] Enzyme v3.7.0
+- [x] ESlint (extends Airbnb)
+- [x] Husky
+- [x] Lint Staged
+- [x] Prettier
+- [x] Flow
+- [x] Enzyme
 
 ### Custom Scripts
 
-- [x] `android:build` - Generate Release APK
 - [x] `android:install` - Run in Release mode
-- [x] `android:shake` - Show DEV menu
 - [x] `ios:install` - Run in Release mode
 - [x] `project:clean` - Clean project
 - [x] `prettier:check` - Check for unformatted files
