@@ -18,7 +18,7 @@ const versionNumber = parseInt(versionString.replace(/\./g, ''));
 
 console.log(EMPTY_LINE);
 
-if (versionNumber >= 570) {
+if (versionNumber >= 570 && versionNumber < 575) {
   console.log('🛠  Fix React-Native@0.57.x installation...');
   console.log(' -> Cleaning React Native cache...');
   execSync('rm -Rf .rncache', {
