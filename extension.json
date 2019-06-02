@@ -17,10 +17,5 @@
       "yarn test",
       "git add"
     ]
-  },
-  "prettier": {
-    "printWidth": 100,
-    "singleQuote": true,
-    "trailingComma": "es5"
   }
 }

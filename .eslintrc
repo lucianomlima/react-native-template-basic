@@ -7,7 +7,7 @@
   "extends": [
     "airbnb",
     "plugin:react/recommended",
-    "plugin:prettier/recommended",
+    "prettier",
     "prettier/react"
   ],
   "globals": {
@@ -30,18 +30,7 @@
     }
   ],
   "rules": {
-    "arrow-parens": ["error", "as-needed"],
     "class-methods-use-this": "off",
-    "comma-dangle": ["error", {
-      "arrays": "always-multiline",
-      "objects": "always-multiline",
-      "imports": "always-multiline",
-      "exports": "always-multiline",
-      "functions": "ignore"
-    }],
-    "indent": ["error", 2, {
-      "SwitchCase": 1
-    }],
     "global-require": "off",
     "no-console": ["error", {
       "allow": ["warn", "error"]
@@ -52,9 +41,6 @@
     "no-use-before-define": ["error", {
       "variables": false
     }],
-    "object-curly-newline": "off",
-    "operator-linebreak": "off",
-    "radix": "off",
 
     "import/extensions": ["error", {
       "js": "never",
