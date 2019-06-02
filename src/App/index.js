@@ -49,7 +49,7 @@ const App = () => (
       <Text style={styles.feature}>{'\u2705 Flow'}</Text>
       <Text style={styles.feature}>{'\u2705 Custom Scripts'}</Text>
     </View>
-    <Text style={styles.instructions}>To get started, edit App.js</Text>
+    <Text style={styles.instructions}>To get started, edit src/App/index.js</Text>
     <Text style={styles.instructions}>{instructions}</Text>
   </View>
 );
