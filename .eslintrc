@@ -4,11 +4,21 @@
     "jest": true,
     "react-native/react-native": true
   },
-  "extends": ["airbnb", "plugin:react/recommended", "prettier"],
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
   "globals": {
     "__DEV__": false
   },
   "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
   "plugins": ["react", "react-native", "prettier"],
   "overrides": [
     {
@@ -37,7 +47,7 @@
       "allow": ["warn", "error"]
     }],
     "no-underscore-dangle": ["error", {
-        "allowAfterThis": true
+      "allowAfterThis": true
     }],
     "no-use-before-define": ["error", {
       "variables": false
@@ -49,6 +59,7 @@
     "import/extensions": ["error", {
       "js": "never",
       "graphql": "always",
+      "json": "always",
       "png": "always"
     }],
     "import/no-named-as-default": "off",
@@ -70,5 +81,10 @@
     "react-native/no-unused-styles": "error",
 
     "prettier/prettier": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-plugin-root-import": { "rootPathSuffix": "src" }
+    }
   }
 }
