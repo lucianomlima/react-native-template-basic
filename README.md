@@ -12,11 +12,20 @@ A simple basic template to start a new React Native app with ESLint and custom s
 
 Create a new project passing a template:
 
-```
+```sh
 react-native init [ProjectName] --template basic-app
 ```
 
 Wait for download dependencies.
+
+### Install Husky git hooks
+
+Git hooks is not installed by default, because when start a new React Native app, you don't have a git repository started.
+To fix this, first init git repo with `git init .` inside you [ProjectName] dir and after this run on terminal:
+
+```sh
+node node_modules/husky/lib/installer/bin install
+```
 
 ### Finish installation
 
@@ -77,7 +86,7 @@ Clone this repo with `git clone https://github.com/lucianomlima/react-native-tem
 
 To execute the project with your changes, you can use the absolute path of cloned repo with `react-native-cli`:
 
-```
+```sh
 react-native init [PROJECT_NAME] --template file:///path/to/repo
 ```
 
