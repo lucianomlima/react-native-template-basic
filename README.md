@@ -18,23 +18,35 @@ react-native init [ProjectName] --template basic-app
 
 Wait for download dependencies.
 
-### Husky git hooks
+### Finish installation
 
-Git hooks is not installed by default, because when start a new React Native app, you don't have a git repository started.
-To fix this, first init git repo with `git init .` inside you App dir and after this run:
+Run `node setup.js` to inject custom scripts and remove unnecessary files.
 
-```
-node node_modules/husky/lib/installer/bin install
-```
+#### For VSCode users
 
-### React Native < v0.57.0
-Finish install with:
+If you use Path Intellisense extension add the following to `settings.json`:
 
-```
-yarn start
+```json
+  "path-intellisense.mappings": {
+    "~": "${workspaceRoot}/src"
+  }
 ```
 
-To inject custom scripts and remove unnecessary files.
+#### Flow configuration
+
+Open `.flowconfig` file. Go to the `[options]` section and find the line where is `module.name_mapper`.
+Add this to the next line:
+
+```flow
+module.name_mapper='^~\/\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+```
+
+It should look like the following:
+
+```flow
+module.name_mapper='^[./a-zA-Z0-9$_-]+\.\(bmp\|gif\|jpg\|jpeg\|png\|psd\|svg\|webp\|m4v\|mov\|mp4\|mpeg\|mpg\|webm\|aac\|aiff\|caf\|m4a\|mp3\|wav\|html\|pdf\)$' -> 'RelativeImageStub'
+module.name_mapper='^~\/\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+```
 
 ## Includes
 
