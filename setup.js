@@ -31,7 +31,7 @@ if (versionNumber >= 570 && versionNumber < 575) {
     stdio: 'ignore'
   });
   console.log(' -> Setup Glog...');
-  execSync('./configure', {
+  execSync('../../scripts/ios-configure-glog.sh', {
     cwd: 'node_modules/react-native/third-party/glog-0.3.5',
     stdio: 'ignore'
   });
@@ -54,13 +54,16 @@ execSync(`yarn add --dev react-dom@${reactVersion}`, {
   stdio: 'ignore'
 });
 
+console.log('🧹   Clean...');
+
 // Remove files
 deleteFile('LICENSE');
 deleteFile('README.md');
-deleteFile('devDependencies.json');
+deleteFile('.npmignore');
+deleteFile('__tests__');
 deleteFile('extension.json');
 deleteFile('scripts.json');
-deleteFile('rn-cli.config.js');
+deleteFile('setup.js');
 deleteFile('App.js');
 
-console.log(`✅ Finished!`);
+console.log('✅ Finished!');
