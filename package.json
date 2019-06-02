@@ -2,7 +2,7 @@
   "name": "react-native-template-basic-app",
   "version": "0.1.0",
   "author": "Luciano Lima <beavess+npm@gmail.com>",
-  "description": "Template to create a new React Native project with ESLint",
+  "description": "Template to create a new React Native project with ESLint, Prettier, Flow and Enzyme",
   "homepage": "https://github.com/lucianomlima/react-native-template-basic",
   "license": "MIT",
   "bugs": {
@@ -15,7 +15,10 @@
   "keywords": [
     "react-native",
     "template",
-    "eslint"
+    "eslint",
+    "prettier",
+    "flow",
+    "enzyme"
   ],
   "scripts": {
     "postversion": "git push && git push --tags"
