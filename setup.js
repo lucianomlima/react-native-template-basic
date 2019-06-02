@@ -9,14 +9,27 @@ const deleteFile = filename => {
     return fs.unlinkSync(path.join(__dirname, filename));
   } catch (error) {}
 }
+const deleteFolder = path => {
+  try {
+    if (fs.existsSync(path)) {
+      fs.readdirSync(path).forEach(function(file, index) {
+        const currentPath = `${path}/${file}`;
+        if (fs.lstatSync(currentPath).isDirectory()) {
+          deleteFolder(currentPath);
+        } else {
+          deleteFile(currentPath);
+        }
+      });
+      fs.rmdirSync(path);
+    }
+  } catch (error) {}
+}
 
 const packagePath = path.join(__dirname, 'package.json');
 const packageJSON = JSON.parse(fs.readFileSync(packagePath, 'utf8'));
 
 const versionString = packageJSON.dependencies['react-native'];
 const versionNumber = parseInt(versionString.replace(/\./g, ''));
-
-console.log(EMPTY_LINE);
 
 if (versionNumber >= 570 && versionNumber < 575) {
   console.log('🛠  Fix React-Native@0.57.x installation...');
@@ -54,13 +67,13 @@ execSync(`yarn add --dev react-dom@${reactVersion}`, {
   stdio: 'ignore'
 });
 
-console.log('🧹   Clean...');
+console.log('🧹  Clean...');
 
 // Remove files
+deleteFolder('__tests__');
 deleteFile('LICENSE');
 deleteFile('README.md');
 deleteFile('.npmignore');
-deleteFile('__tests__');
 deleteFile('extension.json');
 deleteFile('scripts.json');
 deleteFile('setup.js');
